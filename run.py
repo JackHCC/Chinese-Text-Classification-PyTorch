@@ -49,4 +49,5 @@ if __name__ == '__main__':
     if model_name != 'Transformer':
         init_network(model)
     print(model.parameters)
+
     train(config, model, train_iter, dev_iter, test_iter)

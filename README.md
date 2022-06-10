@@ -103,9 +103,12 @@ bert模型放在 bert_pretain目录下，ERNIE模型放在ERNIE_pretrain目录�
  - vocab.txt  
 
 预训练模型下载地址：  
+
 bert_Chinese: 模型 https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz  
               词表 https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt  
+
 来自[这里](https://github.com/huggingface/pytorch-transformers)   
+
 备用：模型的网盘地址：https://pan.baidu.com/s/1qSAD5gwClq7xlgzl_4W3Pw
 
 ERNIE_Chinese: https://pan.baidu.com/s/1lEPdDN1-YQJmKEd_g9rLgw  
@@ -162,11 +165,7 @@ python pretrain_run.py --model ERNIE
 预训练模型：
 
 ```
-# bert (+其他)
-python bert_predict.py
-
-# ERNIE
-python ERNIE_predict.py
+python pretrain_predict.py
 ```
 
 神经网络模型：

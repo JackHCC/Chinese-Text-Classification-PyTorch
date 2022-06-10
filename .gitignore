@@ -3,3 +3,10 @@ __pycache__
 THUCNews/log/
 THUCNews/saved_dict/*.ckpt
 
+bert_pretrain/*.bin
+bert_pretrain/*.json
+bert_pretrain/*.text
+
+ERNIE_pretrain/*.bin
+ERNIE_pretrain/*.json
+ERNIE_pretrain/*.text
