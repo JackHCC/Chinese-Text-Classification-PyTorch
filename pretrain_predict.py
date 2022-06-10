@@ -53,8 +53,18 @@ class Predict:
             num = torch.argmax(outputs)
         return key[int(num)]
 
+    def predict_list(self, querys):
+        pred = []
+        for query in querys:
+            pred.append(self.predict(query))
+        return pred
+
 
 if __name__ == "__main__":
     pred = Predict('bert')
+    # 预测一条
     query = "学费太贵怎么办？"
     print(pred.predict(query))
+    # 预测一个列表
+    querys = ["学费太贵怎么办？", "金融怎么样"]
+    print(pred.predict_list(querys))

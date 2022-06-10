@@ -171,7 +171,7 @@ python pretrain_predict.py
 神经网络模型：
 
 ```
-Todo：
+python predict.py
 ```
 
 
